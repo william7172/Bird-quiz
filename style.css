@@ -1,0 +1,42 @@
+body{
+  font-family: monospace;
+  text-align: center;
+  background-color: yellow
+}
+header{
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 15px;
+  header:yellow 
+}
+img{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+
+.column{
+  text-align: center;
+  border-width: 1px;
+  background: white;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.row {
+  background-color: white;
+  display: flex; //any children will become flexible components. They can grow and shrink so they don't overflow the container.
+  flex-wrap: wrap;//pops the second column to the next row if there isn't enough room
+}
+
+* {
+  box-sizing: border-box;
+   /*The box-sizing CSS property sets how the total width and height of an element is calculated.
+  border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+}
+
